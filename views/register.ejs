@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head') %> 
+  <%- include('partials/header') %> 
+<body>
+    <div class="container-fluid">
+    <h1>Registro</h1>
+    <form action="/register" enctype="multipart/form-data" method="POST">
+    <input name="nombre" type="text" class="form-control" placeholder="Nombre">
+    <input name="apellido" type="text" class="form-control" placeholder="Apellido">
+    <input name="email" type="email" class="form-control" placeholder="Email">
+    <input name="pass1" type="password" class="form-control" placeholder="Contraseña">
+    <label for="">Avatar</label>
+    <input name="avatar" type="file" class="form-control">
+
+    <button class="btn-primary my-3" type="submit">Registrarme</button>
+</form>
+</div>
+</body>
+<%- include('partials/footer') %> 
+</html>

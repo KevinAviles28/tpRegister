@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head') %> 
+  <%- include('partials/header') %> 
+<body>
+  <h1>Tu perfil</h1>
+  <p>Nombre de usuario: <%= result.nombre %> </p>
+  <p>Apellido del usuario: <%= result.apellido %> </p>
+  <p>Email del usuario: <%= result.email %> </p>
+
+
+  <img src="/images/users/<%=result.avatar  %>" alt="">
+    
+</body>
+<%- include('partials/footer') %> 
+</html>
